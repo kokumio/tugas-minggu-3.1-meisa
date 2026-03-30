@@ -1,4 +1,4 @@
-package juaracoding.namapeserta.pages;
+package juaracoding.meisa.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    private WebDriver driver;
+    WebDriver driver;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -23,15 +23,15 @@ public class LoginPage {
     WebElement btnLogin;
 
     @FindBy(xpath = "//h3[@data-test='error']")
-    WebElement errorMessage;
+    WebElement txtError;
 
-    public void loginUser(String user, String pass) {
+    public void loginUser(String user, String pwd) {
         username.sendKeys(user);
-        password.sendKeys(pass);
+        password.sendKeys(pwd);
         btnLogin.click();
     }
 
     public String getErrorMessage() {
-        return errorMessage.getText();
+        return txtError.getText();
     }
 }

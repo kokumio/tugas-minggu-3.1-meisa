@@ -1,4 +1,4 @@
-package juaracoding.namapeserta.pages;
+package juaracoding.meisa.pages; 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class InventoryPage {
-    private WebDriver driver;
+    WebDriver driver;
 
     public InventoryPage(WebDriver driver) {
         this.driver = driver;
@@ -22,15 +22,16 @@ public class InventoryPage {
     @FindBy(className = "shopping_cart_badge")
     WebElement cartBadge;
 
-    public void clickAddToCart() {
+    public void addProductToCart() {
         btnAddToCart.click();
     }
 
-    public String getBtnText() {
+    public String getButtonText() {
         return btnRemove.getText();
     }
 
-    public String getCartBadgeText() {
+    // 2. Samakan namanya dengan yang dipanggil di InventoryTest
+    public String getCartBadgeText() { 
         return cartBadge.getText();
     }
 }
