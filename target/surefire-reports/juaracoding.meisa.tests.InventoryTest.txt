@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: juaracoding.meisa.tests.InventoryTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.915 s - in juaracoding.meisa.tests.InventoryTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.598 s <<< FAILURE! - in juaracoding.meisa.tests.InventoryTest
+juaracoding.meisa.tests.InventoryTest.testCheckoutProcess  Time elapsed: 0.155 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#first\-name"}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59b84e20693ad5ddc8f51eb980141e0a, findElement {using=id, value=first-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\WIN1O~1\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56808}, goog:processID: 10368, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56808/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59b84e20693ad5ddc8f51eb980141e0a
+	at juaracoding.meisa.tests.InventoryTest.testCheckoutProcess(InventoryTest.java:45)
+

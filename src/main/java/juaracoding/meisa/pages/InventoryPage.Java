@@ -22,6 +22,9 @@ public class InventoryPage {
     @FindBy(className = "shopping_cart_badge")
     WebElement cartBadge;
 
+    @FindBy(className = "shopping_cart_link")
+    WebElement btnCart;
+
     public void addProductToCart() {
         btnAddToCart.click();
     }
@@ -30,8 +33,11 @@ public class InventoryPage {
         return btnRemove.getText();
     }
 
-    // 2. Samakan namanya dengan yang dipanggil di InventoryTest
     public String getCartBadgeText() { 
         return cartBadge.getText();
+    }
+
+    public void goToCart() {
+        btnCart.click();
     }
 }
